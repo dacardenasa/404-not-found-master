@@ -164,3 +164,20 @@ footer .credits {
   }
 
 }
+
+@media (max-width: 374px) {
+  .container {
+    width: 100%;
+    left: 0;
+  }
+
+  .main-content {
+    margin: 0 auto;
+  }
+
+  .description-content h1 {
+    font-size: 40px;
+  }
+
+
+}
