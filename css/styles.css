@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  height: 50vh;
+  position: absolute;
+  left: 10%;
+  top: 25vh;
+  width: 80%;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items:center;
+}
+
+.img-box {
+  height: 100%;
+  width: 40%;
+  background: url("../img/Scarecrow.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.description-content {
+  padding: 50px;
+  width: 60%;
+  height: 100%;
+}
+
+
+.description-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description-content p {
+  display: inline-block;
+  width: 50%;
+}
+
+.button-home {
+  background-color: #000;
+  color: white;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 10px;
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;  
+}
+
+footer .credits {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: 10vh;
+  }
+
+  .container {
+    height: 60vh;
+    top: 10vh;
+  }
+
+  .main-content {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .img-box {
+    width: 90%;
+    height: 50%;
+  }
+  
+  .description-content {
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+  }
+  
+  .description-content p {
+    width: 81%;
+  }
+
+  .button-home {
+    margin-top: 20px;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .container {
+    height: 50vh;
+    top: 15vh;
+    left: 5%;
+    width: 90%;
+  }
+
+  .description-content {
+    padding: 10px;
+  }
+
+  .description-content h1 {
+    padding: none;
+  }
+
+  .description-content p {
+    width: 85%;
+    padding: none;
+  }
+
+}
+
+
+@media (max-width: 458px) {
+  .container {
+    width: 95%;
+  }
+
+  .description-content p {
+    width: 100%;
+  }
+
+  .description-content h1 {
+    font-size: 45px;
+  }
+
+}
