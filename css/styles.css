@@ -179,5 +179,8 @@ footer .credits {
     font-size: 40px;
   }
 
+  footer .credits p {
+    font-size: 15px;
+  }
 
 }
